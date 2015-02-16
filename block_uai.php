@@ -260,13 +260,13 @@ class block_uai extends block_base {
 
 		$nodonewprintorder = navigation_node::create(
 				get_string('newprintorder', 'mod_emarking'),
-				new moodle_url("/mod/emarking/newprintorder.php", array("course"=>$courseid)), //url para enlazar y ver información de facebook
+				new moodle_url("/mod/emarking/print/newprintorder.php", array("course"=>$courseid)), //url para enlazar y ver información de facebook
 				navigation_node::TYPE_CUSTOM,
 				null, null, new pix_icon('t/portfolioadd', get_string('newprintorder', 'mod_emarking')));
 		
 		$nodomyexams = navigation_node::create(
 				get_string('myexams', 'mod_emarking'),
-				new moodle_url("/mod/emarking/exams.php", array("course"=>$courseid)), //url para enlazar y ver información de facebook
+				new moodle_url("/mod/emarking/print/exams.php", array("course"=>$courseid)), //url para enlazar y ver información de facebook
 				navigation_node::TYPE_CUSTOM,
 				null, null, new pix_icon('a/view_list_active', get_string('myexams', 'mod_emarking')));
 
