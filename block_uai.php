@@ -523,7 +523,7 @@ if($COURSE->id == 1){
 			$catid=optional_param('categoryid', 0, PARAM_INT);
 		} //definimos el id de la categoria
 
-		$url = new moodle_url("/mod/emarking/printorders.php", array("category"=>$catid));
+		$url = new moodle_url("/mod/emarking/print/printorders.php", array("category"=>$catid));
 
 		$rootnode = navigation_node::create(
 				get_string('printorders', 'mod_emarking'),
