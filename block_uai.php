@@ -446,7 +446,7 @@ if($COURSE->id == 1){
 				get_string('admin', 'block_uai'),
 				new moodle_url("/local/reservasalas/admin.php"),
 				navigation_node::TYPE_CUSTOM, null, null,
-				new pix_icon('i/report', get_string('ajsedes', 'block_uai')));
+				new pix_icon('i/permissions', get_string('admin', 'block_uai')));
 		
 		$context = context_system::instance();
 			
